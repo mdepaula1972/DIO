@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content</title>
+
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            
+        }
+
+        .item{
+            background-color: aqua;)
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: red;
+            border: 2px solid black;
+                               
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .space-around{
+            align-content: space-around;
+    </style>
+
+</head>
+<body>
+    <div class="container space-around">
+        <div class="item">sdfasfas adfasdfas asdfasdfa asdfasdf sdfdafa</div>
+        <div class="item">asdfasdfa asdfasdf sdfdaf</div>
+        <div class="item">adfasdfas asdfasdfa asdfasdf sdfdafa</div>
+        <div class="item">asfasfsaf fadfasdfas fasdfasfd asdfasfa adfasdfasf asdfasfsa asdfasfas adfasdfas asdfasdfa asdfasdf sdfdafa</div>
+        <div class="item">adfasdfas asdfasdfa asdfasdf sdfdafa</div>
+        <div class="item">adfasdfas asdfasdfa asdfasdf sdfdafa</div>
+        <div class="item">adfasdfas asdfasdfa asdfasdf sdfdafa</div>
+    </div>
+</body>
+</html>

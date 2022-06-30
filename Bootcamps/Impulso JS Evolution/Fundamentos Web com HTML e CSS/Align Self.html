@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Selg</title>
+
+    <style>
+        .flex-container{
+            max-width: 350px;
+            display: flex;
+            border:1px solid;
+            margin-bottom: 10px;
+            
+        }
+
+        .align-container{   
+            align-items: center;
+        }
+
+        .item{
+            flex: 1;
+            background-color: brown;)
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+    <body>
+        <h1>Row</h1>
+        <p>Align Self Auto</p>
+        <section class="flex-container align-container">
+            <div class="item auto">AAA</div>
+            <div class="item auto">123</div>
+            <div class="item auto">asdfasfa asfdasd asdfasf asfasdfasdf</div>
+            <div class="item auto">Item 4</div>
+            <div class="item auto">Item 5</div>
+            
+
+        </section>
+
+        <p>Align Self Diferentes</p>
+        <section class="flex-container">
+            <div class="item stretch">AAA</div>
+            <div class="item auto">123</div>
+            <div class="item end">asdfasfa asfdasd asdfasf asfasdfasdf</div>
+            <div class="item center">Item 4</div>
+            <div class="item start">Item 5</div>
+            
+
+        </section>
+
+        <h1>Column</h1>
+        <p>Align Self Auto</p>
+        <section class="flex-container align-container direction">
+            <div class="item auto">AAA</div>
+            <div class="item auto">123</div>
+            <div class="item auto">asdfasfa asfdasd asdfasf asfasdfasdf</div>
+            <div class="item auto">Item 4</div>
+            <div class="item auto">Item 5</div>
+            
+
+        </section>
+
+        <p>Align Self Diferentes</p>
+        <section class="flex-container direction">
+            <div class="item stretch">AAA</div>
+            <div class="item auto">123</div>
+            <div class="item end">af</div>
+            <div class="item center">Item 4</div>
+            <div class="item start">Item 5</div>
+    </body>
+
+</html>
+
