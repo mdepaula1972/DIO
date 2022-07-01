@@ -1,0 +1,47 @@
+/* caminho para JS buscar novas fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* { /* tipos de fontes */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Dando padrão para o corpo da página */
+body {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+/* Informando que tipo de texto será aceito e como será a caixa para inserção das tarefas */
+input [type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+/* Estilizando o botão adicionar */
+button{
+  border: 1px solid rgb(105, 197, 255);
+  border-radius: 5px;
+  background-color: rgb(227, 248, 255);
+  color: rgb(105, 197, 255);
+  text-align: center;
+  padding: 5px;
+}
+/* Padrão para todos dados digitados  */
+#tasks {
+    display: flex;
+    flex-direction: column; /* se os dados ficarão em linha (row) ou colunas*/
+    margin-top: 20px; /* distância da caixa de digitação */
+  }
+  /* padrão de cada item digitado */
+  .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  /* padrão da caixinha + a informação digitada */
+  :checked + label {
+    text-decoration: line-through; /* linha no texto */
+    color: grey;
+  }
